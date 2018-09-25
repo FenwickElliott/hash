@@ -7,7 +7,7 @@ import (
 )
 
 // Md5string returns an md5 has of the string passed in
-func Md5string(in string) string {
+func Md5strings(in string) string {
 	h := md5.New()
 	h.Write([]byte(in))
 	return hex.EncodeToString(h.Sum(nil))
